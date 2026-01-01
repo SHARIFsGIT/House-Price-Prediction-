@@ -34,14 +34,15 @@ ENV/
 *~
 .DS_Store
 
-# Model files
+# Model files (but keep the trained ones)
 *.pkl
-model.pkl
-scaler.pkl
-model_metrics.pkl
+!model.pkl
+!scaler.pkl
+!model_metrics.pkl
 
-# Data files
+# Data files (but keep the training dataset)
 *.csv
+!Datasets/Housing.csv
 prediction_history.csv
 
 # Jupyter
